@@ -330,14 +330,14 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2" height="34" alt="">
-						<span>Victoria</span>
+						<img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" class="rounded-circle mr-2" height="34" alt="">
+						<span>Marlly</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
 						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Mensaje <span class="badge badge-pill bg-blue ml-auto">58</span></a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
 						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -377,13 +377,13 @@
 					<div class="card-body">
 						<div class="media">
 							<div class="mr-3">
-								<a href="#"><img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="38" height="38" class="rounded-circle" alt=""></a>
+								<a href="#"><img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" width="38" height="38" class="rounded-circle" alt=""></a>
 							</div>
 
 							<div class="media-body">
-								<div class="media-title font-weight-semibold">Victoria Baker</div>
+								<div class="media-title font-weight-semibold">Marlly Cantú</div>
 								<div class="font-size-xs opacity-50">
-									<i class="icon-pin font-size-sm"></i> &nbsp;Santa Ana, CA
+									<i class="icon-pin font-size-sm"></i> &nbsp;Victoria, Tamps.
 								</div>
 							</div>
 
@@ -436,15 +436,22 @@
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Carreras</span></a>
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Grupos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<!--<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>-->
-								<li class="nav-item"><a href=" " class="nav-link">Agregar carrera</a></li>
-								<li class="nav-item"><a href=" " class="nav-link">Editar carrera</a></li>
-								<li class="nav-item"><a href=" " class="nav-link">Mostrar carreras</a></li>
+								<li class="nav-item"><a href="grupos.html " class="nav-link">Agregar grupo</a></li>
+								<li class="nav-item"><a href="tabla_grupos.html" class="nav-link">Listado de grupos</a></li>
+								
 								<!--<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Materias</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="materias.html " class="nav-link">Agregar materia</a></li>
+								<li class="nav-item"><a href="tabla_materias.html" class="nav-link">Listado de materias</a></li>
 							</ul>
 						</li>
 				
@@ -483,9 +490,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Form layouts</a>
-							<span class="breadcrumb-item active">Horizontal</span>
+							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Maestros</a>
+							<span class="breadcrumb-item active">Editar Maestros</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -698,7 +705,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
@@ -724,7 +731,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
@@ -748,7 +755,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
@@ -772,7 +779,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
@@ -821,7 +828,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>

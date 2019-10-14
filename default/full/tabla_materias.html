@@ -330,14 +330,14 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" height="34" alt="">
+						<img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" class="rounded-circle mr-2" height="34" alt="">
 						<span>Marlly</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
 						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Mensaje <span class="badge badge-pill bg-blue ml-auto">58</span></a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
 						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -441,9 +441,9 @@
 								<!--<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>-->
-								<li class="nav-item"><a href="grupos.html" class="nav-link">Agregar grupo</a></li>
+								<li class="nav-item"><a href="grupos.html " class="nav-link">Agregar grupo</a></li>
 								<li class="nav-item"><a href="tabla_grupos.html" class="nav-link">Listado de grupos</a></li>
-				
+								
 								<!--<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 							</ul>
 						</li>
@@ -474,7 +474,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Maestros</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -491,8 +491,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Alumnos</a>
-							<span class="breadcrumb-item active">Editar Alumno</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Materias</a>
+							<span class="breadcrumb-item active">Editar Materias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -530,12 +530,30 @@
 			<div class="content">
 				<div class="card">
 						<table class="table datatable-basic">
+						<!--<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Apellido</th>
+								<th>Carrera</th>
+								<th>Matrícula</th>
+								<th>Estatus</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>-->
 						<tbody>
 							
 				</div>
 
 				<!-- Horizontal form options -->
-				<<div>
+				<div class="content">
+				<div class="card">
+						<table class="table datatable-basic">
+						<tbody>
+							
+				</div>
+
+				<!-- Horizontal form options -->
+				<div>
 					<tr>
 					<td>   </td>
 					<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Editar registro <i class="icon-play3 ml-2"></i></button></td>
@@ -560,39 +578,93 @@
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
+										<label class="col-form-label col-sm-3">Clave</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="Solís" class="form-control">
+											<input type="text" placeholder="43567" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Correo</label>
+										<label class="col-form-label col-sm-3">Horas por semana:</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="62636@upv.edu.mx.com" class="form-control">
+											<input type="number" placeholder="3" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matrícula</label>
+										<label class="col-form-label col-sm-3">Cantidad de grupos:</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="5263786" class="form-control">
+											<input type="number" placeholder="5" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
+											<label class="col-lg-3 col-form-label">Área:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona el grupo" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup label="Ingenierías">
+														<option value="ITI">Ingeniería en Tecnologías de la Información</option>
+														<option value="ITM">Ingeniería en Tecnologías de la Manufactura</option>
+														<option value="IM">Ingeniería en Mecantrónica</option>
+														<option value="ISA">Ingeniería en Sistemas Automotrices</option>
+													</optgroup>
+													<optgroup label="Licenciaturas">
+														<option value="LAYGE">Licenciatura y Administración de Pequeñas y Medianas Empresas</option>
+													</optgroup>
+													<optgroup label="Maestrías">
+														<option value="MI">Maestría en Ingeniería</option>
+														<option value="MER">Maestría en Energías Renovables</option>
+														
+													</optgroup>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Cuatrimestre:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona el cuatrimestre" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup label="Carreras">
+														<option value="uno">Primero</option>
+														<option value="dos">Segundo</option>
+														<option value="tres">Tercero</option>
+														<option value="cuatro">Cuarto</option>
+														<option value="cinco">Quinto</option>
+														<option value="seis">Sexto</option>
+														<option value="siete">Séptimo</option>
+														<option value="ocho">Octavo</option>
+														<option value="nueve">Noveno</option>
+														<option value="diez">Décimo</option>
+													</optgroup>
+													<optgroup label="Maestrías">
+														<option value="uno">Primero</option>
+														<option value="dos">Segundo</option>
+														<option value="tres">Tercero</option>
+														<option value="cuatro">Cuarto</option>
+														<option value="cinco">Quinto</option>
+														<option value="seis">Sexto</option>
+														
+													</optgroup>
+												</select>
+											</div>
+										</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Maestro:</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="Ingeniería en ..." class="form-control">
+											<input type="text" placeholder="Arturo Almazán" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Cuatrimestre</label>
+										<label class="col-form-label col-sm-3">Correo:</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="Primero" class="form-control">
+											<input type="text" placeholder="ejemplo@gmail.com" class="form-control">
 										</div>
 									</div>
+
 
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Teléfono</label>
@@ -600,35 +672,6 @@
 											<input type="tel" placeholder="834 267 4567" data-mask="834 654 2345" class="form-control">
 										</div>
 									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Victoria" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Tamaulipas" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Dirección</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Calle Buena Ventura #234" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Código Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
-										</div>
-									</div>
-								</div>
 
 								<div class="modal-footer">
 									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
@@ -638,6 +681,10 @@
 						</div>
 					</div>
 				</div>
+				<!--<div>
+									<td><button type="button" class="btn bg-warning" data-toggle="modal" data-target="#modal_theme_warning">Eliminar registro <i class="icon-play3 ml-2"></i></button></td>
+									</div>-->
+
 				<div class="row">
 					<div class="col-md-6">
 
@@ -650,8 +697,9 @@
 		                		<a class="list-icons-item" data-action="remove"></a>
 		                	</div>
 	                	</div>
+	                	<!--Por aquí está el error-->
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Alumnos</h5>
+								<h5 class="card-title">Materias</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -667,43 +715,48 @@
 						<thead>
 							<tr>
 								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Matrícula</th>
-								<th>Estatus</th>
-								<th class="text-center">Acciones</th>
+								<th>CLave</th>
+								<th>Horas</th>
+								<th>Grupos</th>
+								<th>Área</th>
+								<th>Cuatri</th>
+								<th>Maestro</th>
+								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Isaac</td>
-								<td><!--<a href="#">-->Beccera</a></td>
+								<td>Álgebra</td>
+								<td>27009</td>
+								<td>5</td>
+								<td>2</td>
+								<td>Ingeniería en Tecnologías de la Inofrmación</td>
+							    <td>Primero</td>
+							    <td>Eréndira Rodríguez</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+											</div>
+
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Introducción a las Tecnologías de la Información</td>
+								<td>27097</td>
+								<td>4</td>
+								<td>3</td>
 								<td>Ingeniería en Tecnologías de la Información</td>
-								<td>193062</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+								<td>Primero</td>
+								<td>Mario Humberto</td>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">
-												<i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Diana</td>
-								<td>González</td>
-								<td>Ingeniería en Tecnologías de la Información</a></td>
-								<td>1930012</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -713,19 +766,20 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td>Ladislao</td>
-								<td>Rivera</td>
+								<td>Inglés</td>
+								<td>54789</td>								
+								<td>5</td>
+								<td>4</td>
 								<td>Ingeniería en Mecatrónica</td>
-								<td>1930069</td>
-								<td><span class="badge badge-danger">Activo</span></td>
+								<td>Segundo</td>
+								<td>Maxwell Gart</td>
+
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -735,79 +789,12 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
 									</div>
 								</td>
 							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td>Richardson</a></td>
-								<td>Ingeniería en Sistemas Automotrices</td>
-								<td>1930077</td>
-								<td><span class="badge badge-info">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Diana</td>
-								<td>Facundo</td>
-								<td>Licenciatura en Administración de Pequeñas y Medianas Empresas</td>
-								<td>1930091</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Gart</a></td>
-								<td>Ingeniería en Mecatrónica</a></td>
-								<td>1930087</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
+							
 							</tbody>
 					</table>
 				</div>

@@ -330,14 +330,14 @@
 
 				<li class="nav-item dropdown dropdown-user">
 					<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-						<img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" height="34" alt="">
+						<img src="C:\Users\Liverpoll\Desktop\UPV\Bootstrap\img\florRoja.png" class="rounded-circle mr-2" height="34" alt="">
 						<span>Marlly</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
 						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Mensaje <span class="badge badge-pill bg-blue ml-auto">58</span></a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
 						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -441,9 +441,9 @@
 								<!--<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>-->
-								<li class="nav-item"><a href="grupos.html" class="nav-link">Agregar grupo</a></li>
-								<li class="nav-item"><a href="tabla_grupos.html" class="nav-link">Listado de grupos</a></li>
-				
+								<li class="nav-item"><a href="grupos.html " class="nav-link">Agregar grupo</a></li>
+								<li class="nav-item"><a href="tabla_grupos.html " class="nav-link">Listado de grupos</a></li>
+								
 								<!--<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
 							</ul>
 						</li>
@@ -474,7 +474,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Alumnos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Maestros</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -491,8 +491,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Alumnos</a>
-							<span class="breadcrumb-item active">Editar Alumno</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Maestros</a>
+							<span class="breadcrumb-item active">Editar Maestros</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -530,12 +530,22 @@
 			<div class="content">
 				<div class="card">
 						<table class="table datatable-basic">
+						<!--<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Apellido</th>
+								<th>Carrera</th>
+								<th>Matrícula</th>
+								<th>Estatus</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>-->
 						<tbody>
 							
 				</div>
 
 				<!-- Horizontal form options -->
-				<<div>
+				<div>
 					<tr>
 					<td>   </td>
 					<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Editar registro <i class="icon-play3 ml-2"></i></button></td>
@@ -555,77 +565,81 @@
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Nombre</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="Marco" class="form-control">
+											<input type="text" placeholder="ITI1-1" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
+										<label class="col-form-label col-sm-3">Clave:</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="Solís" class="form-control">
+											<input type="text" placeholder="27097" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Generación:</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="2019-2022" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Observación:</label>
+											<div class="col-lg-9">
+												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe aquí"></textarea>
+											</div>
+
+									
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Alumnos</label>
+										<div class="col-sm-9">
+											<input type="number" placeholder="32" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Entrada</label>
+										<div class="col-sm-9">
+											<input type="time" placeholder="7:00 am"class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Descanso</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="10:00 - 10:30 am" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Salida</label>
+										<div class="col-sm-9">
+											<input type="time" placeholder="2:00 pm" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Materias</label>
+										<div class="col-sm-9">
+											<input type="number" placeholder="8" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Tutor</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Arturo Almazán" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Correo</label>
 										<div class="col-sm-9">
-											<input type="text" placeholder="62636@upv.edu.mx.com" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matrícula</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="5263786" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Ingeniería en ..." class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Cuatrimestre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Primero" class="form-control">
+											<input type="text" placeholder="ejemplo@gmail.com" class="form-control">
 										</div>
 									</div>
 
 									<div class="form-group row">
 										<label class="col-form-label col-sm-3">Teléfono</label>
 										<div class="col-sm-9">
-											<input type="tel" placeholder="834 267 4567" data-mask="834 654 2345" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Victoria" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Tamaulipas" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Dirección</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Calle Buena Ventura #234" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Código Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
+											<input type="text" placeholder="834 327 1031" class="form-control">
 										</div>
 									</div>
 								</div>
@@ -638,6 +652,10 @@
 						</div>
 					</div>
 				</div>
+				<!--<div>
+									<td><button type="button" class="btn bg-warning" data-toggle="modal" data-target="#modal_theme_warning">Eliminar registro <i class="icon-play3 ml-2"></i></button></td>
+									</div>-->
+
 				<div class="row">
 					<div class="col-md-6">
 
@@ -651,7 +669,7 @@
 		                	</div>
 	                	</div>
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Alumnos</h5>
+								<h5 class="card-title">Maestros</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -667,20 +685,24 @@
 						<thead>
 							<tr>
 								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Matrícula</th>
-								<th>Estatus</th>
+								<th>Clave</th>
+								<th>Generación</th>
+								<th>Entrada</th>
+								<th>Salida</th>
+								<th>Materias</th>
+								<th>Tutor</th>
 								<th class="text-center">Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Isaac</td>
-								<td><!--<a href="#">-->Beccera</a></td>
-								<td>Ingeniería en Tecnologías de la Información</td>
-								<td>193062</td>
-								<td><span class="badge badge-success">Activo</span></td>
+								<td>ITI1-1</td>
+								<td>27097</td>
+								<td>2019-2022</td>
+								<td>7:00 am</td>
+							    <td>1:00 pm</td>
+							    <td>6</td>
+							    <td>Arturo Almazán</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -689,21 +711,24 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">
-												<i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
+
 										</div>
 									</div>
 								</td>
 							</tr>
 							<tr>
-								<td>Diana</td>
-								<td>González</td>
-								<td>Ingeniería en Tecnologías de la Información</a></td>
-								<td>1930012</td>
-								<td><span class="badge badge-secondary">Activo</span></td>
+								<td>ITI1-2</td>
+								<td>21098</td>
+								<td>2019-2011</td>
+								<td>7:00 am</td>
+								<td>2:00 pm</td>
+								<td>7</td>
+								<td>Mario Humberto</td>
+
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -721,11 +746,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Ladislao</td>
-								<td>Rivera</td>
-								<td>Ingeniería en Mecatrónica</td>
-								<td>1930069</td>
-								<td><span class="badge badge-danger">Activo</span></td>
+								<td>IM1-1</td>
+								<td>26091</td>								
+								<td>2019-2022</td>
+								<td>7:00 am</td>
+								<td>2:00 pm</td>
+								<td>6</td>
+								<td>Antonio Aguilar</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -743,11 +770,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Nathalie</td>
-								<td>Richardson</a></td>
-								<td>Ingeniería en Sistemas Automotrices</td>
-								<td>1930077</td>
-								<td><span class="badge badge-info">Inactivo</span></td>
+								<td>IM1-2</td>
+								<td>27090</td>
+								<td>2019-2022</td>
+								<td>7:00 am</td>
+								<td>2:00 pm</td>
+								<td>7</td>
+								<td>Julián Contreras</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -765,11 +794,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Diana</td>
-								<td>Facundo</td>
-								<td>Licenciatura en Administración de Pequeñas y Medianas Empresas</td>
-								<td>1930091</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td>IM1-3</td>
+								<td>27092</td>
+								<td>2019-2022</td>
+								<td>7:00 am</td>
+								<td>2:00 pm</td>
+								<td>7</td>
+								<td>Ximena Sierra</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -778,7 +809,7 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
 												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
@@ -786,28 +817,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Gart</a></td>
-								<td>Ingeniería en Mecatrónica</a></td>
-								<td>1930087</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
+							
 							</tbody>
 					</table>
 				</div>

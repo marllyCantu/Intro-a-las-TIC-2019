@@ -554,10 +554,17 @@
 								<!--<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>-->
-								<li class="nav-item"><a href="grupos.html" class="nav-link">Agregar grupos</a></li>
-								<li class="nav-item"><a href="tabla_grupos.html" class="nav-link">Listado grupos</a></li>
-								
+								<li class="nav-item"><a href="grupos.html " class="nav-link">Agregar grupo</a></li>
+								<li class="nav-item"><a href="tabla_grupos.html" class="nav-link">Listado de grupos</a></li>
+								<!--<li class="nav-item"><a href=" " class="nav-link">Mostrar carreras</a></li>-->
 								<!--<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Materias</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="materias.html " class="nav-link">Agregar materia</a></li>
+								<li class="nav-item"><a href="tabla_materias.html" class="nav-link">Listado de materias</a></li>
 							</ul>
 						</li>
 						<!-- /forms -->
@@ -1235,7 +1242,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Maestros</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Grupos</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1252,8 +1259,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Maestros</a>
-							<span class="breadcrumb-item active">Editar Maestros</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Grupos</a>
+							<span class="breadcrumb-item active">Agregar Grupo</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1288,793 +1295,13 @@
 
 
 			<!-- Content area -->
-			<div class="content">
-
-				<!-- Horizontal form options -->
-				<div class="row">
-					<!--<div class="col-md-6">-->
-
-						<!-- Basic layout-->
-						<!--<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic layout</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Name:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Eugene Kopyov">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Password:</label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" placeholder="Your strong password">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your state:</label>
-										<div class="col-lg-9">
-											<select class="form-control form-control-select2" data-fouc>
-												<optgroup label="Alaskan/Hawaiian Time Zone">
-													<option value="AK">Alaska</option>
-													<option value="HI">Hawaii</option>
-												</optgroup>
-												<optgroup label="Pacific Time Zone">
-													<option value="CA">California</option>
-													<option value="NV">Nevada</option>
-													<option value="WA">Washington</option>
-												</optgroup>
-												<optgroup label="Mountain Time Zone">
-													<option value="AZ">Arizona</option>
-													<option value="CO">Colorado</option>
-													<option value="WY">Wyoming</option>
-												</optgroup>
-												<optgroup label="Central Time Zone">
-													<option value="AL">Alabama</option>
-													<option value="AR">Arkansas</option>
-													<option value="KY">Kentucky</option>
-												</optgroup>
-												<optgroup label="Eastern Time Zone">
-													<option value="CT">Connecticut</option>
-													<option value="DE">Delaware</option>
-													<option value="FL">Florida</option>
-												</optgroup>
-											</select>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Gender:</label>
-										<div class="col-lg-9">
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" checked data-fouc>
-													Male
-												</label>
-											</div>
-
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" data-fouc>
-													Female
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your avatar:</label>
-										<div class="col-lg-9">
-											<input type="file" class="form-input-styled" data-fouc>
-											<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Tags:</label>
-										<div class="col-lg-9">
-											<select multiple="multiple" data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
-												<optgroup label="Services">
-													<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-													<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-													<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-													<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-													<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-												</optgroup>
-												<optgroup label="File types">
-													<option value="pdf" data-icon="file-pdf">PDF</option>
-													<option value="word" data-icon="file-word">Word</option>
-													<option value="excel" data-icon="file-excel">Excel</option>
-													<option value="openoffice" data-icon="file-openoffice">Open office</option>
-												</optgroup>
-												<optgroup label="Browsers">
-													<option value="chrome" data-icon="chrome" selected>Chrome</option>
-													<option value="firefox" data-icon="firefox" selected>Firefox</option>
-													<option value="safari" data-icon="safari">Safari</option>
-													<option value="opera" data-icon="opera">Opera</option>
-													<option value="IE" data-icon="IE">IE</option>
-												</optgroup>
-											</select>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your message:</label>
-										<div class="col-lg-9">
-											<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-										</div>
-									</div>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /basic layout -->
-
-					<!--</div>-->
-
-					<div class="col-md-6">
-
-						<!-- Static mode -->
-						<!--<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Static mode</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Name:</label>
-										<div class="col-lg-9">
-											<div class="form-control-plaintext">Eugene Kopyov</div>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Password:</label>
-										<div class="col-lg-9">
-											<input type="password" class="form-control" readonly value="********">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your state:</label>
-										<div class="col-lg-9">
-											<select class="form-control form-control-select2" disabled data-fouc>
-												<optgroup label="Alaskan/Hawaiian Time Zone">
-													<option value="AK">Alaska</option>
-													<option value="HI">Hawaii</option>
-												</optgroup>
-												<optgroup label="Pacific Time Zone">
-													<option value="CA">California</option>
-													<option value="NV" selected>Nevada</option>
-													<option value="WA">Washington</option>
-												</optgroup>
-												<optgroup label="Mountain Time Zone">
-													<option value="AZ">Arizona</option>
-													<option value="CO">Colorado</option>
-													<option value="WY">Wyoming</option>
-												</optgroup>
-												<optgroup label="Central Time Zone">
-													<option value="AL">Alabama</option>
-													<option value="AR">Arkansas</option>
-													<option value="KY">Kentucky</option>
-												</optgroup>
-												<optgroup label="Eastern Time Zone">
-													<option value="CT">Connecticut</option>
-													<option value="DE">Delaware</option>
-													<option value="FL">Florida</option>
-												</optgroup>
-											</select>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Gender:</label>
-										<div class="col-lg-9">
-											<div class="form-check form-check-inline disabled">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" disabled checked data-fouc>
-													Male
-												</label>
-											</div>
-
-											<div class="form-check form-check-inline disabled">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" disabled data-fouc>
-													Female
-												</label>
-											</div>	
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your avatar:</label>
-										<div class="col-lg-9">
-											<div class="media mt-0">
-												<div class="mr-3">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="60" height="60" class="rounded-round" alt="">
-													</a>
-												</div>
-
-												<div class="media-body">
-													<input type="file" class="form-input-styled" disabled data-fouc>
-													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Tags:</label>
-										<div class="col-lg-9">
-											<select multiple="multiple" disabled data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
-												<optgroup label="Services">
-													<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
-													<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
-													<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
-													<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
-													<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
-												</optgroup>
-												<optgroup label="File types">
-													<option value="pdf" data-icon="file-pdf">PDF</option>
-													<option value="word" data-icon="file-word">Word</option>
-													<option value="excel" data-icon="file-excel">Excel</option>
-													<option value="openoffice" data-icon="file-openoffice">Open office</option>
-												</optgroup>
-												<optgroup label="Browsers">
-													<option value="chrome" data-icon="chrome" selected>Chrome</option>
-													<option value="firefox" data-icon="firefox" selected>Firefox</option>
-													<option value="safari" data-icon="safari">Safari</option>
-													<option value="opera" data-icon="opera">Opera</option>
-													<option value="IE" data-icon="IE">IE</option>
-												</optgroup>
-											</select>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Your message:</label>
-										<div class="col-lg-9">
-											<div class="form-control-plaintext">
-												<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /static mode -->
-
-					</div>
-				</div>
-				<!-- /vertical form options -->
-
-
-				<!-- Centered forms -->
-				<!--<div class="row">
-					<div class="col-md-6">
-						<div class="card">
-							<div class="card-header">
-								<div class="row">
-									<div class="col-md-10 offset-md-1">
-										<div class="header-elements-inline">
-											<h5 class="card-title">Centered form</h5>
-											<div class="header-elements">
-												<div class="list-icons">
-							                		<a class="list-icons-item" data-action="collapse"></a>
-							                		<a class="list-icons-item" data-action="reload"></a>
-							                		<a class="list-icons-item" data-action="remove"></a>
-							                	</div>
-						                	</div>
-					                	</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card-body">
-								<div class="row">
-									<div class="col-md-10 offset-md-1">
-										<form action="#">
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your name:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Eugene Kopyov">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your password:</label>
-												<div class="col-lg-9">
-													<input type="password" class="form-control" placeholder="Your strong password">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Select your state:</label>
-												<div class="col-lg-9">
-													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-														<option></option>
-														<optgroup label="Alaskan/Hawaiian Time Zone">
-															<option value="AK">Alaska</option>
-															<option value="HI">Hawaii</option>
-														</optgroup>
-														<optgroup label="Pacific Time Zone">
-															<option value="CA">California</option>
-															<option value="OR">Oregon</option>
-															<option value="WA">Washington</option>
-														</optgroup>
-														<optgroup label="Mountain Time Zone">
-															<option value="AZ">Arizona</option>
-															<option value="CO">Colorado</option>
-															<option value="WY">Wyoming</option>
-														</optgroup>
-														<optgroup label="Central Time Zone">
-															<option value="AL">Alabama</option>
-															<option value="KS">Kansas</option>
-															<option value="KY">Kentucky</option>
-														</optgroup>
-														<optgroup label="Eastern Time Zone">
-															<option value="CT">Connecticut</option>
-															<option value="DE">Delaware</option>
-															<option value="WV">West Virginia</option>
-														</optgroup>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
-												<div class="col-lg-9">
-													<input type="file" class="form-input-styled" data-fouc>
-													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Your message:</label>
-												<div class="col-lg-9">
-													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-												</div>
-											</div>
-
-											<div class="text-right">
-												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="row">
-							<div class="col-md-10 offset-md-1">
-								<div class="card">
-									<div class="card-header header-elements-inline">
-										<h5 class="card-title">Centered card</h5>
-										<div class="header-elements">
-											<div class="list-icons">
-						                		<a class="list-icons-item" data-action="collapse"></a>
-						                		<a class="list-icons-item" data-action="reload"></a>
-						                		<a class="list-icons-item" data-action="remove"></a>
-						                	</div>
-					                	</div>
-									</div>
-
-									<div class="card-body">
-										<form action="#">
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your name:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Eugene Kopyov">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your password:</label>
-												<div class="col-lg-9">
-													<input type="password" class="form-control" placeholder="Your strong password">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Select your state:</label>
-												<div class="col-lg-9">
-													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-														<option></option>
-														<optgroup label="Alaskan/Hawaiian Time Zone">
-															<option value="AK">Alaska</option>
-															<option value="HI">Hawaii</option>
-														</optgroup>
-														<optgroup label="Pacific Time Zone">
-															<option value="CA">California</option>
-															<option value="NV">Nevada</option>
-															<option value="WA">Washington</option>
-														</optgroup>
-														<optgroup label="Mountain Time Zone">
-															<option value="AZ">Arizona</option>
-															<option value="CO">Colorado</option>
-															<option value="ID">Idaho</option>
-														</optgroup>
-														<optgroup label="Central Time Zone">
-															<option value="AL">Alabama</option>
-															<option value="IA">Iowa</option>
-															<option value="KS">Kansas</option>
-														</optgroup>
-														<optgroup label="Eastern Time Zone">
-															<option value="CT">Connecticut</option>
-															<option value="DE">Delaware</option>
-															<option value="WV">West Virginia</option>
-														</optgroup>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
-												<div class="col-lg-9">
-													<input type="file" class="form-input-styled" data-fouc>
-													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Your message:</label>
-												<div class="col-lg-9">
-													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-												</div>
-											</div>
-
-											<div class="text-right">
-												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>-->
-				<!-- /form centered -->
-
-
-				<!-- Fieldset legend -->
-				<div class="row">
-					<div class="col-md-6">
-
-						<!-- Basic legend -->
-						<!--<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Basic legend</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">Enter your information</legend>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Enter your name:</label>
-											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Eugene Kopyov">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Enter your password:</label>
-											<div class="col-lg-9">
-												<input type="password" class="form-control" placeholder="Your strong password">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Repeat password:</label>
-											<div class="col-lg-9">
-												<input type="password" class="form-control" placeholder="Repeat password">
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Your message:</label>
-											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-											</div>
-										</div>
-									</fieldset>
-
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">Add personal details</legend>
-
-			                			<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Your country:</label>
-											<div class="col-lg-9">
-			                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
-			                                        <option value="USA">USA</option> 
-			                                        <option value="United Kingdom">United Kingdom</option> 
-			                                        <option value="...">...</option> 
-			                                        <option value="Australia">Australia</option> 
-			                                    </select>
-		                                    </div>
-			                			</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Select your state:</label>
-											<div class="col-lg-9">
-												<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-													<option></option>
-													<optgroup label="Alaskan/Hawaiian Time Zone">
-														<option value="AK">Alaska</option>
-														<option value="HI">Hawaii</option>
-													</optgroup>
-													<optgroup label="Pacific Time Zone">
-														<option value="CA">California</option>
-														<option value="NV">Nevada</option>
-														<option value="WA">Washington</option>
-													</optgroup>
-													<optgroup label="Mountain Time Zone">
-														<option value="AZ">Arizona</option>
-														<option value="CO">Colorado</option>
-														<option value="WY">Wyoming</option>
-													</optgroup>
-													<optgroup label="Central Time Zone">
-														<option value="AL">Alabama</option>
-														<option value="AR">Arkansas</option>
-														<option value="KY">Kentucky</option>
-													</optgroup>
-													<optgroup label="Eastern Time Zone">
-														<option value="CT">Connecticut</option>
-														<option value="DE">Delaware</option>
-														<option value="FL">Florida</option>
-													</optgroup>
-												</select>
-											</div>
-										</div>
-
-			                			<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Gender:</label>
-											<div class="col-lg-9">
-												<div class="form-check form-check-inline">
-													<label class="form-check-label">
-														<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
-														Male
-													</label>
-												</div>
-
-												<div class="form-check form-check-inline">
-													<label class="form-check-label">
-														<input type="radio" name="gender2" class="form-input-styled" data-fouc>
-														Female
-													</label>
-												</div>
-											</div>
-			                			</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Your CV:</label>
-											<div class="col-lg-9">
-												<input type="file" class="form-input-styled" data-fouc>
-												<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
-											</div>
-										</div>
-
-			                			<div class="form-group row">
-											<label class="col-lg-3 col-form-label">About yourself:</label>
-											<div class="col-lg-9">
-			                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
-		                                    </div>
-			                			</div>
-									</fieldset>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /basic legend -->
-
-					</div>
-
-					<div class="col-md-6">
-
-						<!-- Advanced legend -->
-						<!--<div class="card">
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Advanced legend</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">
-											<i class="icon-file-text2 mr-2"></i>
-											Enter your information
-											<a class="float-right text-default" data-toggle="collapse" data-target="#demo1">
-												<i class="icon-circle-down2"></i>
-											</a>
-										</legend>
-
-										<div class="collapse show" id="demo1">
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your name:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Eugene Kopyov">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Enter your password:</label>
-												<div class="col-lg-9">
-													<input type="password" class="form-control" placeholder="Your strong password">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Repeat password:</label>
-												<div class="col-lg-9">
-													<input type="password" class="form-control" placeholder="Repeat password">
-												</div>
-											</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Your message:</label>
-												<div class="col-lg-9">
-													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
-												</div>
-											</div>
-										</div>
-									</fieldset>
-
-									<fieldset>
-										<legend class="font-weight-semibold text-uppercase font-size-sm">
-											<i class="icon-reading mr-2"></i>
-											Add personal details
-											<a class="float-right text-default" data-toggle="collapse" data-target="#demo2">
-												<i class="icon-circle-down2"></i>
-											</a>
-										</legend>
-
-										<div class="collapse show" id="demo2">
-				                			<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Your country:</label>
-												<div class="col-lg-9">
-				                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
-				                                        <option value="USA">USA</option> 
-				                                        <option value="United Kingdom">United Kingdom</option> 
-				                                        <option value="...">...</option> 
-				                                        <option value="Australia">Australia</option> 
-				                                    </select>
-			                                    </div>
-				                			</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Select your state:</label>
-												<div class="col-lg-9">
-													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
-														<option></option>
-														<optgroup label="Alaskan/Hawaiian Time Zone">
-															<option value="AK">Alaska</option>
-															<option value="HI">Hawaii</option>
-														</optgroup>
-														<optgroup label="Pacific Time Zone">
-															<option value="CA">California</option>
-															<option value="NV">Nevada</option>
-															<option value="WA">Washington</option>
-														</optgroup>
-														<optgroup label="Mountain Time Zone">
-															<option value="AZ">Arizona</option>
-															<option value="CO">Colorado</option>
-															<option value="WY">Wyoming</option>
-														</optgroup>
-														<optgroup label="Central Time Zone">
-															<option value="AL">Alabama</option>
-															<option value="AR">Arkansas</option>
-															<option value="KY">Kentucky</option>
-														</optgroup>
-														<optgroup label="Eastern Time Zone">
-															<option value="CT">Connecticut</option>
-															<option value="DE">Delaware</option>
-															<option value="FL">Florida</option>
-														</optgroup>
-													</select>
-												</div>
-											</div>
-
-				                			<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Gender:</label>
-												<div class="col-lg-9">
-													<div class="form-check form-check-inline">
-														<label class="form-check-label">
-															<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
-															Male
-														</label>
-													</div>
-
-													<div class="form-check form-check-inline">
-														<label class="form-check-label">
-															<input type="radio" name="gender2" class="form-input-styled" data-fouc>
-															Female
-														</label>
-													</div>
-												</div>
-				                			</div>
-
-											<div class="form-group row">
-												<label class="col-lg-3 col-form-label">Your CV:</label>
-												<div class="col-lg-9">
-													<input type="file" class="form-input-styled" data-fouc>
-													<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
-												</div>
-											</div>
-
-				                			<div class="form-group row">
-												<label class="col-lg-3 col-form-label">About yourself:</label>
-												<div class="col-lg-9">
-				                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
-			                                    </div>
-				                			</div>
-			                			</div>
-									</fieldset>
-
-									<div class="text-right">
-										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>-->
-						<!-- /a legend -->
-
-					</div>
-				</div>
-				<!-- /fieldset legend -->
+			<div class="content">				
 
 
 				<!-- 2 columns form -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Maestros</h5>
+						<h5 class="card-title">Grupos</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -2094,22 +1321,23 @@
 										<div class="form-group row">
 											<label class="col-lg-3 col-form-label">Nombre:</label>
 											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Normando">
+												<input type="text" class="form-control" placeholder="ITI1-1">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Contraseña:</label>
+											<label class="col-lg-3 col-form-label">Clave:</label>
 											<div class="col-lg-9">
-												<input type="text" class="form-control" placeholder="Rodríguez">
+												<input type="text" class="form-control" placeholder="27097">
 											</div>
 										</div>
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Contraseña:</label>
+											<label class="col-lg-3 col-form-label">Generación:</label>
 											<div class="col-lg-9">
-												<input type="password" class="form-control" placeholder="32456">
+												<input type="text" class="form-control" placeholder="2019-2022">
 											</div>
 										</div>
+										
 
 										<!--<div class="form-group row">
 											<label class="col-lg-3 col-form-label">Select your state:</label>
@@ -2144,12 +1372,6 @@
 											</div>
 										</div>-->
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Ingresa tu foto:</label>
-											<div class="col-lg-9">
-												<input type="file" class="form-input-styled" data-fouc>
-											</div>
-										</div>
 
 										<div class="form-group row">
 											<label class="col-lg-3 col-form-label">Observación:</label>
@@ -2160,16 +1382,18 @@
 									</fieldset>
 								</div>
 
+					
+
 								<div class="col-md-6">
 									<fieldset>
-					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Información personal</legend>
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Detalles</legend>
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">CURP:</label>
+											<label class="col-lg-3 col-form-label">Cantidad de alumnos</label>
 											<div class="col-lg-9">
 												<div class="row">
 													<div class="col-md-6">
-														<input type="text" placeholder="HRSG4536254GFT" class="form-control">
+														<input type="number" placeholder="32" class="form-control">
 													</div>
 
 													<!--<div class="col-md-6">
@@ -2179,8 +1403,9 @@
 											</div>
 										</div>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Email:</label>
+
+										<!--<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Correo:</label>
 											<div class="col-lg-9">
 												<input type="text" placeholder="ejemplo@hotmail.com" class="form-control">
 											</div>
@@ -2191,9 +1416,9 @@
 											<div class="col-lg-9">
 												<input type="tel" placeholder="834 267 4576" class="form-control">
 											</div>
-										</div>
+										</div>-->
 
-										<div class="form-group row">
+										<!--<div class="form-group row">
 											<label class="col-lg-3 col-form-label">Dirección:</label>
 											<div class="col-lg-9">
 												<div class="row">
@@ -2217,24 +1442,71 @@
 													</div>
 												</div>
 											</div>
-										</div>
+										</div>-->
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Dirección:</label>
+											<label class="col-lg-3 col-form-label">Hora de entrada:</label>
 											<div class="col-lg-9">
-												<input type="text" placeholder="Dirección completa" class="form-control">
+												<input type="text" placeholder="7:00 am" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Hora de descanso:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="10:00 - 10:30 am" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Hora de salida:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="2:00 pm" class="form-control">
 											</div>
 										</div>
 
 										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Observación:</label>
+											<label class="col-lg-3 col-form-label">Materias:</label>
 											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe aquí"></textarea>
+												<input type="number" class="form-control" placeholder="8">
 											</div>
-										</div>
+										    </div>
+
 									</fieldset>
 								</div>
 							</div>
+
+								<div class="card-body">
+						    <form action="#">
+						        <div class="row">
+							       <div class="col-md-6">
+									     <fieldset>
+										   <legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Turor:</legend> 
+
+										   <div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Arturo Almazán">
+											</div>
+										    </div>
+
+										    <div class="form-group row">
+											<label class="col-lg-3 col-form-label">Correo:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="ejemplo@gmail.com">
+											</div>
+										    </div>
+
+										    <div class="form-group row">
+											<label class="col-lg-3 col-form-label">Teléfono:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="834 543 2179">
+											</div>
+										    </div>
+
+										</fieldset>
+									</div>
+								</div>
+							</form>
+						</div>
 
 							<div class="text-right">
 								<button type="submit" class="btn btn-primary">Enviar formulario<i class="icon-paperplane ml-2"></i></button>
@@ -2261,7 +1533,7 @@
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Marlly Cantú</a>
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">
