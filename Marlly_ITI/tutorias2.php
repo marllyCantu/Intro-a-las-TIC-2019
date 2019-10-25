@@ -337,7 +337,7 @@
 					<div class="dropdown-menu dropdown-menu-right">
 						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
 						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Mensaje <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
 						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -411,6 +411,7 @@
 								</span>
 							</a>
 						</li>
+					
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
@@ -452,8 +453,8 @@
 								<li class="nav-item"><a href="listado_tutorias2.php" class="nav-link">Listado de tutorías</a></li>
 							</ul>
 						</li>
-				
-               <!-- Me agarré borrando un montón de cosas-->
+						<!-- /forms -->
+
 					</ul>
 				</div>
 				<!-- /main navigation -->
@@ -472,7 +473,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Grupos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Tutorías</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -489,8 +490,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Grupos</a>
-							<span class="breadcrumb-item active">Editar Grupos</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Tutorías</a>
+							<span class="breadcrumb-item active">Agregar tutoría</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -526,32 +527,12 @@
 
 			<!-- Content area -->
 			<div class="content">
-				<div class="card">
-						<table class="table datatable-basic">
-						<!--<thead>
-							<tr>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Matrícula</th>
-								<th>Estatus</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>-->
-						<tbody>
-							
-				</div>
 
-				<!-- Horizontal form options -->
-				<!--<div>
-					<tr>
-					<td>   </td>
-					<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Editar registro <i class="icon-play3 ml-2"></i></button></td>
-					<td></td>
-				</tr>
-				</div>-->
-				<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de grupos</h5>
+
+				<!-- 2 columns form -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Tutorías</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -559,302 +540,127 @@
 		                		<a class="list-icons-item" data-action="remove"></a>
 		                	</div>
 	                	</div>
-				</div>
-				<div class="card">
-					<div class="datatable-header"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><span>Buscar:</span> <input type="search" class="" placeholder="Escribe la inicial..." aria-controls="DataTables_Table_0"></label>
 					</div>
-					<div class="dataTables_length" id="DataTables_Table_0_length"><label><span>Mostrar:</span> <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-DataTables_Table_0_length-bq-container"><span class="select2-selection__rendered" id="select2-DataTables_Table_0_length-bq-container" title="10">10</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></label>
-					</div>
-				</div>
 
-				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar registro - Grupos:</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
+					<div class="card-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Alumno</legend>
 
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI1-1" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Clave:</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="27097" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Generación:</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="2019-2022" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Observación:</label>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
 											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe aquí"></textarea>
+												<input type="text" class="form-control" placeholder="Normando Urbina">
 											</div>
+										</div>
 
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Alumnos</label>
-										<div class="col-sm-9">
-											<input type="number" placeholder="32" class="form-control">
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matrícula:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="32456">
+											</div>
 										</div>
-									</div>
 
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Entrada</label>
-										<div class="col-sm-9">
-											<input type="time" placeholder="7:00 am"class="form-control">
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Correo:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="1930061@upv.edu.mx">
+											</div>
 										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Descanso</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="10:00 - 10:30 am" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Salida</label>
-										<div class="col-sm-9">
-											<input type="time" placeholder="2:00 pm" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Materias</label>
-										<div class="col-sm-9">
-											<input type="number" placeholder="8" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Tutor</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Arturo Almazán" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Correo</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ejemplo@gmail.com" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Teléfono</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="834 327 1031" class="form-control">
-										</div>
-									</div>
+									</fieldset>
 								</div>
 
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-									<button type="submit" class="btn bg-primary">Enviar formulario</button>
+								<div class="col-md-6">
+									<fieldset>
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Profesor</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Normando Urbina">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Maúmero de empleado:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="32456">
+											</div>
+										</div>
+
+										<div class="form-group row">
+										<label class="col-lg-3 col-form-label" >Carrera:</label>
+										<div class="col-lg-9" >
+											<select class="form-control form-control-select2" data-fouc>
+												<optgroup label="" >
+													<option value="nada" selected="">Selecciona una opción</option>
+													<option value="ITI">Ingeniería en Tecnologías de la Información</option>
+													<option value="IM">Ingeniería en Mecantrónica</option>
+													<option value="ITM">Ingeniería en Tecnologías de la Manufactura</option>
+													<option value="LAYGE">Licenciatura en gestión de pequeñas y medianas emresas</option>
+													<option value="ISA">Ingeniería en Sistemas Automotrices</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Correo:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="1930061@upv.edu.mx">
+											</div>
+										</div>
+
+									</fieldset>
 								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Tutoría</legend>
 
-				<div class="row">
-					<div class="col-md-6">
 
-						<!-- Basic layout-->
-
-							<div class="card-body">
-								<form action="#">
-									<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>Nombre</th>
-								<th>Clave</th>
-								<th>Generación</th>
-								<th>Entrada</th>
-								<th>Salida</th>
-								<th>Materias</th>
-								<th>Tutor</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>ITI1-1</td>
-								<td>27097</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-							    <td>1:00 pm</td>
-							    <td>6</td>
-							    <td>Arturo Almazán</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
-											</div>
-
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ITI1-2</td>
-								<td>21098</td>
-								<td>2019-2011</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Mario Humberto</td>
-
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha en que se solicitó:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="10/10/2019">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>IM1-1</td>
-								<td>26091</td>								
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>6</td>
-								<td>Antonio Aguilar</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha requerida:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="18/10/2019">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>IM1-2</td>
-								<td>27090</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Julián Contreras</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Hora:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="18:00">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>IM1-3</td>
-								<td>27092</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Ximena Sierra</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema:</label>
+											<div class="col-lg-9">
+												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe el tema que se tratará en la tutoría"></textarea>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
+									</fieldset>
+								</div>
+								<div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Anterior</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Siguiente</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">Octubre</span>&nbsp;<span class="ui-datepicker-year">2019</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Domingo">D</span></th><th scope="col"><span title="Lunes">L</span></th><th scope="col"><span title="Martes">M</span></th><th scope="col"><span title="Miercoles">M</span></th><th scope="col"><span title="Jueves">J</span></th><th scope="col"><span title="Viernes">V</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Sabado">S</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="100" data-year="2019"><a class="ui-state-default" href="#">4</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">5</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">11</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">12</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">18</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">19</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">23</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default ui-state-highlight ui-state-active" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">25</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">26</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2019"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div>
+							</div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Enviar formulario<i class="icon-paperplane ml-2"></i></button>
+							</div>
+
 							
-							</tbody>
-					</table>
+						</form>
+					</div>
 				</div>
-
-			
-								</form>
-							</div>
-						</div>
-						<!-- /basic layout -->
-
-					</div>
-
-				<div class="modal fade" id="bootbox_form" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-						<div class="modal-header"><h5 class="modal-title">Eliminar grupo</h5><button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
-						</div>
-						<div class="modal-body"><div class="bootbox-body">
-							<div class="row"> 
-							 <div class="col-md-12">
-							 	<form action="">
-							 	<div class="form-group row"><label class="col-md-4 col-form-label">Matrícula</label>
-							 		<div class="col-md-8"><input id="name" name="name" type="text" placeholder="1900000" class="form-control"><span class="form-text text-muted"></span>
-							 		</div>
-							 	</div>
-							 	<div class="form-group row"><label class="col-md-4 col-form-label">Contraseña</label>
-							 		<div class="col-md-8"><input id="name" name="name" type="password" placeholder="Your name" class="form-control"><span class="form-text text-muted">La asignada por la escuela</span>
-							 		</div>
-							 	</div>
-							 	<div class="form-group row"><label class="col-md-4 col-form-label">¿Estás seguro de querer eliminar el grupo?</label>
-							 		<div class="col-md-8">
-							 			<div class="form-check"><label class="form-check-label"><input type="radio" class="form-check-input" name="awesomeness" id="awesomeness-0" value="Really awesome" checked="">No, cancelar</label>
-							 			</div>
-							 			<div class="form-check"><label class="form-check-label"><input type="radio" class="form-check-input" name="awesomeness" id="awesomeness-1" value="Super awesome">Si, seguro</label>
-							 			</div> 
-							 		</div> 
-							 	</div>
-							 	<div class="modal-footer"><button data-dismiss="modal" type="button" class="btn btn-link">Cancelar</button>
-					            <button data-dismiss="modal" type="submit" class="btn bg-warning-400">Continuar</button>
-					            </div>
-							    </form>
-							</div>
-						    </div>
-					    </div>
-					</div>
-					</div></div>
-				</div>		
+				<!-- /2 columns form -->
 
 			</div>
 			<!-- /content area -->
@@ -871,7 +677,7 @@
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2019. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Marlly Cantú</a>
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">

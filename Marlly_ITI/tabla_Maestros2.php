@@ -445,6 +445,13 @@
 								<li class="nav-item"><a href="tabla_materias2.php" class="nav-link">Listado de materias</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Tutorías</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="tutorias2.php " class="nav-link">Agregar tutoría</a></li>
+								<li class="nav-item"><a href="listado_tutorias2.php" class="nav-link">Listado de tutorías</a></li>
+							</ul>
+						</li>
 				
                <!-- Me agarré borrando un montón de cosas-->
 					</ul>
@@ -536,18 +543,33 @@
 				</div>
 
 				<!-- Horizontal form options -->
-				<div>
+				<!--<div>
 					<tr>
 					<td>   </td>
 					<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Editar registro <i class="icon-play3 ml-2"></i></button></td>
 					<td></td>
 				</tr>
+				</div>-->
+				<div class="card-header header-elements-inline">
+						<h5 class="card-title">Listado de maestros</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
 				</div>
+				<div class="datatable-header"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><span>Buscar:</span> <input type="search" class="" placeholder="Escribe la inicial..." aria-controls="DataTables_Table_0"></label>
+					</div>
+					<div class="dataTables_length" id="DataTables_Table_0_length"><label><span>Mostrar:</span> <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-DataTables_Table_0_length-bq-container"><span class="select2-selection__rendered" id="select2-DataTables_Table_0_length-bq-container" title="10">10</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></label>
+					</div>
+
 				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title">Editar registro:</h5>
+								<h5 class="modal-title">Editar registro - Maestros:</h5>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 
@@ -637,36 +659,47 @@
 						</div>
 					</div>
 				</div>
-				<!--<div>
-									<td><button type="button" class="btn bg-warning" data-toggle="modal" data-target="#modal_theme_warning">Eliminar registro <i class="icon-play3 ml-2"></i></button></td>
-									</div>-->
+				<div class="modal fade" id="bootbox_form" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+						<div class="modal-header"><h5 class="modal-title">Eliminar maestro</h5><button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+						<div class="modal-body"><div class="bootbox-body">
+							<div class="row"> 
+							 <div class="col-md-12">
+							 	<form action="">
+							 	<div class="form-group row"><label class="col-md-4 col-form-label">Matrícula</label>
+							 		<div class="col-md-8"><input id="name" name="name" type="text" placeholder="1900000" class="form-control"><span class="form-text text-muted"></span>
+							 		</div>
+							 	</div>
+							 	<div class="form-group row"><label class="col-md-4 col-form-label">Contraseña</label>
+							 		<div class="col-md-8"><input id="name" name="name" type="password" placeholder="Your name" class="form-control"><span class="form-text text-muted">La asignada por la escuela</span>
+							 		</div>
+							 	</div>
+							 	<div class="form-group row"><label class="col-md-4 col-form-label">¿Estás seguro de querer eliminar al maestro?</label>
+							 		<div class="col-md-8">
+							 			<div class="form-check"><label class="form-check-label"><input type="radio" class="form-check-input" name="awesomeness" id="awesomeness-0" value="Really awesome" checked="">No, cancelar</label>
+							 			</div>
+							 			<div class="form-check"><label class="form-check-label"><input type="radio" class="form-check-input" name="awesomeness" id="awesomeness-1" value="Super awesome">Si, seguro</label>
+							 			</div> 
+							 		</div> 
+							 	</div>
+							 	<div class="modal-footer"><button data-dismiss="modal" type="button" class="btn btn-link">Cancelar</button>
+					            <button data-dismiss="modal" type="submit" class="btn bg-warning-400">Continuar</button>
+					            </div>
+							    </form>
+							</div>
+						    </div>
+					    </div>
+					</div>
+					</div></div>
+				</div>
 
 				<div class="row">
 					<div class="col-md-6">
 
 						<!-- Basic layout-->
-						<div class="card">
-							<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Maestros</h5>
-								<div class="header-elements">
-									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-							</div>
-
-							<div class="card-body">
-								<form action="#">
-									<table class="table datatable-basic">
+						<table class="table datatable-basic">
 						<thead>
 							<tr>
 								<th>Nombre</th>
@@ -696,8 +729,10 @@
 											</a>
 
 											<div class="dropdown-menu dropdown-menu-right">
+
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 
 										</div>
@@ -722,7 +757,7 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
 									</div>
@@ -745,7 +780,7 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
 									</div>
@@ -768,7 +803,7 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
 									</div>
@@ -791,7 +826,7 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
 									</div>
@@ -815,7 +850,7 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Eliminar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
 									</div>

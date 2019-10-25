@@ -466,13 +466,16 @@
 
 
 		<!-- Main content -->
+
+				<!-- Basic datatable -->
+				
 		<div class="content-wrapper">
 
 			<!-- Page header -->
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Grupos</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Formularios</span> - Tutorías</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -489,8 +492,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Inicio</a>
-							<a href="form_layout_horizontal.html" class="breadcrumb-item">Grupos</a>
-							<span class="breadcrumb-item active">Editar Grupos</span>
+							<a href="form_layout_horizontal.html" class="breadcrumb-item">Tutorías</a>
+							<span class="breadcrumb-item active">Editar tutoría</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -528,22 +531,12 @@
 			<div class="content">
 				<div class="card">
 						<table class="table datatable-basic">
-						<!--<thead>
-							<tr>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Matrícula</th>
-								<th>Estatus</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>-->
 						<tbody>
 							
 				</div>
 
 				<!-- Horizontal form options -->
-				<!--<div>
+				<!--  CREO QUE ESTE ERA EL BOTÓN OOPS <div>
 					<tr>
 					<td>   </td>
 					<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal">Editar registro <i class="icon-play3 ml-2"></i></button></td>
@@ -551,7 +544,7 @@
 				</tr>
 				</div>-->
 				<div class="card-header header-elements-inline">
-						<h5 class="card-title">Listado de grupos</h5>
+						<h5 class="card-title">Listado de tutorías</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -567,162 +560,32 @@
 					</div>
 				</div>
 
-				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar registro - Grupos:</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI1-1" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Clave:</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="27097" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Generación:</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="2019-2022" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Observación:</label>
-											<div class="col-lg-9">
-												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe aquí"></textarea>
-											</div>
-
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Alumnos</label>
-										<div class="col-sm-9">
-											<input type="number" placeholder="32" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Entrada</label>
-										<div class="col-sm-9">
-											<input type="time" placeholder="7:00 am"class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Descanso</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="10:00 - 10:30 am" class="form-control">
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Salida</label>
-										<div class="col-sm-9">
-											<input type="time" placeholder="2:00 pm" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Materias</label>
-										<div class="col-sm-9">
-											<input type="number" placeholder="8" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Tutor</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Arturo Almazán" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Correo</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ejemplo@gmail.com" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Teléfono</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="834 327 1031" class="form-control">
-										</div>
-									</div>
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-									<button type="submit" class="btn bg-primary">Enviar formulario</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				
-
-				<div class="row">
-					<div class="col-md-6">
-
-						<!-- Basic layout-->
-
-							<div class="card-body">
-								<form action="#">
-									<table class="table datatable-basic">
+					<table class="table datatable-basic">
 						<thead>
 							<tr>
-								<th>Nombre</th>
-								<th>Clave</th>
-								<th>Generación</th>
-								<th>Entrada</th>
-								<th>Salida</th>
-								<th>Materias</th>
-								<th>Tutor</th>
-								<th class="text-center">Acciones</th>
+								<th>ID tutoría</th>
+								<th>Hora</th>
+								<th>Alumno</th>
+								<th>Matrícula</th>
+								<th>Correo</th>
+								<th>Maestro</th>
+								<th>Número de maestro</th>
+								<th>Carrera</th>
+								<th>Estado</th>
+								<th class="text-center">Opciones</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>ITI1-1</td>
-								<td>27097</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-							    <td>1:00 pm</td>
-							    <td>6</td>
-							    <td>Arturo Almazán</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
-												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
-											</div>
-
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>ITI1-2</td>
-								<td>21098</td>
-								<td>2019-2011</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Mario Humberto</td>
-
+								<td>001</td>
+								<td>9:00</td>
+								<td>Martha Gómez</td>
+								<td>194055</td>
+								<td>194055@upv.edu.mx</td>
+								<td>Almazán</td>
+								<td>76543</td>
+								<td>ITI</td>
+								<td><span class="badge badge-success">Confirmada</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -739,13 +602,15 @@
 								</td>
 							</tr>
 							<tr>
-								<td>IM1-1</td>
-								<td>26091</td>								
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>6</td>
-								<td>Antonio Aguilar</td>
+								<td>002</td>
+								<td>8:00</td>	
+								<td>Francisco Pérez</td>
+								<td>199955</td>
+								<td>199955@upv.edu.mx</td>
+								<td>Almazán</td>
+								<td>76543</td>
+								<td>ITI</td>
+								<td><span class="badge badge-danger">Cancelada</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -762,13 +627,15 @@
 								</td>
 							</tr>
 							<tr>
-								<td>IM1-2</td>
-								<td>27090</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Julián Contreras</td>
+								<td>003</td>
+								<td>13:00</td>
+								<td>Sofía Lucio</td>
+								<td>143055</td>
+								<td>143055@upv.edu.mx</td>
+								<td>Eréndira Meza</td>
+								<td>76323</td>
+								<td>ITI</td>
+								<td><span class="badge badge-info">Pendiente</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -785,13 +652,15 @@
 								</td>
 							</tr>
 							<tr>
-								<td>IM1-3</td>
-								<td>27092</td>
-								<td>2019-2022</td>
-								<td>7:00 am</td>
-								<td>2:00 pm</td>
-								<td>7</td>
-								<td>Ximena Sierra</td>
+								<td>004</td>
+								<td>16:00</td>
+								<td>Mateo García</td>
+								<td>198705</td>
+								<td>198705@upv.edu.mx</td>
+								<td>Rosa González</td>
+								<td>32145</td>
+								<td>ISA</td>
+								<td><span class="badge badge-success">Confirmado</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -801,6 +670,107 @@
 
 											<div class="dropdown-menu dropdown-menu-right">
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>005</td>
+								<td>10:50</td>
+								<td>Sharon Maxon</td>
+								<td>195432</td>
+								<td>195432@upv.edu.mx</td>
+								<td>Martha Torres</td>
+								<td>543719</td>
+								<td>IM</td>
+								<td><span class="badge badge-info">Pendiente</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>006</td>
+								<td>12:00</td>
+								<td>Maxine Gart</td>
+								<td>153729</td>
+								<td>153729@upv.edu.mx</td>
+								<td>Susan Dosal</td>
+								<td>542809</td>
+								<td>LAYGE</td>
+								<td><span class="badge badge-danger">Cancelada</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>007</td>
+								<td>18:00</td>
+								<td>Sylvia Montenegro</td>
+								<td>123456</td>
+								<td>123456@upv.edu.mx</td>
+								<td>Marco Flores</td>
+								<td>56789</td>
+								<td>ITM</td>
+								<td><span class="badge badge-info">Pendiente</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>008</td>
+								<td>11:00</td>
+								<td>Lizzee McDonald</td>
+								<td>432156</td>
+								<td>432156@upv.edu.mx</td>
+								<td>Susan Dosal</td>
+								<td>542809</td>
+								<td>LAYGE</td>
+								<td><span class="badge badge-success">Confirmada</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-file-text2"></i> Editar</a>
+
 												<a href="#" class="dropdown-item" class="btn btn-light" data-toggle="modal"data-target="#bootbox_form"><i class="icon-file-excel"></i> Eliminar</a>
 											</div>
 										</div>
@@ -808,22 +778,103 @@
 								</td>
 							</tr>
 							
-							</tbody>
+						</tbody>
 					</table>
-				</div>
-
-			
-								</form>
+				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar registro - Tutoría:</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
-						</div>
-						<!-- /basic layout -->
 
-					</div>
+							<form action="#" class="form-horizontal">
+								<div class="modal-body">
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">ID tutoría</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="000" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Hora</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="9:00" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Nombre</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Martha Gómez" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Matrícula</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="123456" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Correo</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="62636@upv.edu.mx.com" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Maestro</label>
+										<div class="col-sm-9">
+											<input type="text" placeholder="Marco Flores" class="form-control">
+										</div>
+									</div>
+
+
+									<div class="form-group row">
+										<label class="col-form-label col-sm-3">Número de maestro</label>
+										<div class="col-sm-9">
+											<input type="tel" placeholder="834 267 4567" data-mask="834 654 2345" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label" >Carrera:</label>
+										<div class="col-lg-9" >
+											<select class="form-control form-control-select2" data-fouc>
+												<optgroup label="" >
+													<option value="nada" selected="">Selecciona una opción</option>
+													<option value="ITI">Ingeniería en Tecnologías de la Información</option>
+													<option value="IM">Ingeniería en Mecantrónica</option>
+													<option value="ITM">Ingeniería en Tecnologías de la Manufactura</option>
+													<option value="LAYGE">Licenciatura en gestión de pequeñas y medianas emresas</option>
+													<option value="ISA">Ingeniería en Sistemas Automotrices</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema:</label>
+											<div class="col-lg-9">
+												<textarea rows="5" cols="5" class="form-control" placeholder="Escribe el tema que se tratará en la tutoría"></textarea>
+											</div>
+										</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
+									<button type="submit" class="btn bg-primary">Enviar formulario</button>
+								</div>
+							</form>
+						</div>
+					</div>					
+				</div>
+				</div>
 
 				<div class="modal fade" id="bootbox_form" tabindex="-1">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
-						<div class="modal-header"><h5 class="modal-title">Eliminar grupo</h5><button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+						<div class="modal-header"><h5 class="modal-title">Eliminar tutoría</h5><button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
 						</div>
 						<div class="modal-body"><div class="bootbox-body">
 							<div class="row"> 
@@ -837,7 +888,7 @@
 							 		<div class="col-md-8"><input id="name" name="name" type="password" placeholder="Your name" class="form-control"><span class="form-text text-muted">La asignada por la escuela</span>
 							 		</div>
 							 	</div>
-							 	<div class="form-group row"><label class="col-md-4 col-form-label">¿Estás seguro de querer eliminar el grupo?</label>
+							 	<div class="form-group row"><label class="col-md-4 col-form-label">¿Estás seguro de querer eliminar la tutoría?</label>
 							 		<div class="col-md-8">
 							 			<div class="form-check"><label class="form-check-label"><input type="radio" class="form-check-input" name="awesomeness" id="awesomeness-0" value="Really awesome" checked="">No, cancelar</label>
 							 			</div>
@@ -854,13 +905,15 @@
 					    </div>
 					</div>
 					</div></div>
-				</div>		
+				</div>
+				<!-- YA ESTÁN COMPLETOS LOS DIV -->
 
 			</div>
 			<!-- /content area -->
 
 
 			<!-- Footer -->
+			<div>
 			<div class="navbar navbar-expand-lg navbar-light">
 				<div class="text-center d-lg-none w-100">
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">

@@ -558,6 +558,13 @@
 								<li class="nav-item"><a href="tabla_materias2.php" class="nav-link">Listado de materias</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Tutorías</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="tutorias2.php " class="nav-link">Agregar tutoría</a></li>
+								<li class="nav-item"><a href="listado_tutorias2.php" class="nav-link">Listado de tutorías</a></li>
+							</ul>
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->

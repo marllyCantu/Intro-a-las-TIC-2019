@@ -450,6 +450,13 @@
 								<li class="nav-item"><a href="tabla_materias2.php" class="nav-link">Listado de materias</a></li>
 							</ul>
 						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Tutorías</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="tutorias2.php " class="nav-link">Agregar tutoría</a></li>
+								<li class="nav-item"><a href="listado_tutorias2.php" class="nav-link">Listado de tutorías</a></li>
+							</ul>
+						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
@@ -1186,11 +1193,11 @@
 						<!-- Traffic sources -->
 						<!--<div class="card">
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Información</h6>
+								<h6 class="card-title">Traffic sources</h6>
 								<div class="header-elements">
 									<div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
 										<label class="form-check-label">
-											Actualizacion en directo:
+											Live update:
 											<input type="checkbox" class="form-input-switchery" checked data-fouc>
 										</label>
 									</div>
@@ -1205,8 +1212,8 @@
 												<i class="icon-plus3"></i>
 											</a>
 											<div>
-												<div class="font-weight-semibold">Visitantes nuevos:</div>
-												<span class="text-muted">2,349</span>
+												<div class="font-weight-semibold">New visitors</div>
+												<span class="text-muted">2,349 avg</span>
 											</div>
 										</div>
 										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
@@ -1218,8 +1225,8 @@
 												<i class="icon-watch2"></i>
 											</a>
 											<div>
-												<div class="font-weight-semibold">Hora pico</div>
-												<span class="text-muted">8:00 pm</span>
+												<div class="font-weight-semibold">New sessions</div>
+												<span class="text-muted">08:20 avg</span>
 											</div>
 										</div>
 										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
@@ -1231,8 +1238,8 @@
 												<i class="icon-people"></i>
 											</a>
 											<div>
-												<div class="font-weight-semibold">Online</div>
-												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378</span>
+												<div class="font-weight-semibold">Total online</div>
+												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378 avg</span>
 											</div>
 										</div>
 										<div class="w-75 mx-auto mb-3" id="total-online"></div>
@@ -1242,9 +1249,11 @@
 
 							<div class="chart position-relative" id="traffic-sources"></div>
 						</div>-->
-						<!-- /traffic sources -->
+					<!-- /traffic sources -->
 
 					</div>
+
+
 
 					<div class="col-xl-5">
 
@@ -2184,7 +2193,7 @@
 					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
 					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutoriales</li>
 					                    		</ul>
-												Sesupone que aquí debemos escribir algo muy interesante...
+												Se supone que aquí debemos escribir algo muy interesante...
 											</div>
 										</div>
 
@@ -2203,7 +2212,7 @@
 					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
 					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutoriales</li>
 					                    		</ul>
-												Sesupone que aquí debemos escribir algo muy interesante otra vez...
+												Se supone que aquí debemos escribir algo muy interesante otra vez...
 											</div>
 										</div>
 									</div>
@@ -2224,7 +2233,7 @@
 					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
 					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutoriales</li>
 					                    		</ul>
-												Sesupone que aquí debemos escribir algo muy interesante y una vez más...
+												Se supone que aquí debemos escribir algo muy interesante y una vez más...
 											</div>
 										</div>
 
@@ -2243,7 +2252,7 @@
 					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
 					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Último video</li>
 					                    		</ul>
-												Sesupone que aquí debemos escribir algo que llame la atenciós...
+												Se supone que aquí debemos escribir algo que llame la atenciós...
 											</div>
 										</div>
 									</div>
@@ -2251,6 +2260,12 @@
 							</div>
 						</div>
 						<!-- /latest posts -->
+						<div class="card card-body text-center">
+							<h6 class="font-weight-semibold mb-0 mt-1">Tutorías</h6>
+							<div class="font-size-sm text-muted mb-3">25/Octubre/2019</div>
+
+							<div class="svg-center" id="rounded_progress_multiple"><svg width="140" height="140"><g transform="translate(70,70)"><g><path class="arc-foreground" d="M0,-65.87867636800242A4,4 0 0,1 4.242424242424242,-69.87132342060863A70,70 0 0,1 69.85208391433905,4.548227437600167A4,4 0 0,1 65.35920332783388,8.25678753213807L65.35920332783388,8.25678753213807A4,4 0 0,1 61.86898860984316,4.028430016160147A62,62 0 0,0 3.757575757575758,-61.88602931539621A4,4 0 0,1 0,-65.87867636800242Z" style="fill: rgb(120, 144, 156);"></path><path d="M0,70A70,70 0 1,1 0,-70A70,70 0 1,1 0,70M0,62A62,62 0 1,0 0,-62A62,62 0 1,0 0,62Z" style="fill: rgb(120, 144, 156); opacity: 0.1;"></path></g><g><path class="arc-foreground" d="M7.105427357601002e-15,-55.85696017507576A4,4 0 0,1 4.285714285714294,-59.84674304472403A60,60 0 1,1 -26.01581188106645,-54.06641778561773A4,4 0 0,1 -20.562318478775687,-51.93448814398193L-20.562318478775687,-51.93448814398193A4,4 0 0,1 -22.547036963590926,-46.8575620808687A52,52 0 1,0 3.714285714285721,-51.8671773054275A4,4 0 0,1 7.105427357601002e-15,-55.85696017507576Z" style="fill: rgb(240, 98, 146);"></path><path d="M0,60A60,60 0 1,1 0,-60A60,60 0 1,1 0,60M0,52A52,52 0 1,0 0,-52A52,52 0 1,0 0,52Z" style="fill: rgb(240, 98, 146); opacity: 0.1;"></path></g><g><path class="arc-foreground" d="M3.552713678800501e-15,-45.8257569495584A4,4 0 0,1 4.347826086956525,-49.81060537995478A50,50 0 1,1 -49.74302398357144,-5.062762582803684A4,4 0 0,1 -45.014056806542825,-8.586890579094145L-45.014056806542825,-8.586890579094145A4,4 0 0,1 -41.78414014620001,-4.252720569555095A42,42 0 1,0 3.652173913043481,-41.840908519162014A4,4 0 0,1 3.552713678800501e-15,-45.8257569495584Z" style="fill: rgb(77, 182, 172);"></path><path d="M0,50A50,50 0 1,1 0,-50A50,50 0 1,1 0,50M0,42A42,42 0 1,0 0,-42A42,42 0 1,0 0,42Z" style="fill: rgb(77, 182, 172); opacity: 0.1;"></path></g></g></svg><ul class="chart-widget-legend text-muted"><li data-slice="0" style="border-bottom: solid 2px #78909C">Inglés</li><li data-slice="1" style="border-bottom: solid 2px #F06292">Carrera</li><li data-slice="2" style="border-bottom: solid 2px #4DB6AC">Matemáticas</li></ul></div>
+						</div>
 
 					</div>
 
@@ -2493,66 +2508,66 @@
 
 
 							<!-- Area chart -->
-							<!--<div id="messages-stats"></div>-->
+							<div id="messages-stats"></div>
 							<!-- /area chart -->
 
 
 							<!-- Tabs -->
-		                	<!--<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
+		                	<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
 								<li class="nav-item">
 									<a href="#messages-tue" class="nav-link font-size-sm text-uppercase active" data-toggle="tab">
-										Tuesday
+										Hoy
 									</a>
 								</li>
 
 								<li class="nav-item">
 									<a href="#messages-mon" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Monday
+										Ayer
 									</a>
 								</li>
 
 								<li class="nav-item">
 									<a href="#messages-fri" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Friday
+										Antier
 									</a>
 								</li>
-							</ul>-->
+							</ul>
 							<!-- /tabs -->
 
 
 							<!-- Tabs content -->
-							<!--<div class="tab-content card-body">
+							<div class="tab-content card-body">
 								<div class="tab-pane active fade show" id="messages-tue">
 									<ul class="media-list">
 										<li class="media">
 											<div class="mr-3 position-relative">
 												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">8</span>
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">2</span>
 											</div>
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">James Alexander</a>
+													<a href="#">Jaime García</a>
 													<span class="font-size-sm text-muted">14:58</span>
 												</div>
 
-												The constitutionally inventoried precariously...
+												Tenía tutoría y nadie fue :/
 											</div>
 										</li>
 
 										<li class="media">
 											<div class="mr-3 position-relative">
 												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">6</span>
+												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">1</span>
 											</div>
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Margo Baker</a>
+													<a href="#">Margaret Gpnzález</a>
 													<span class="font-size-sm text-muted">12:16</span>
 												</div>
 
-												Pinched a well more moral chose goodness...
+												No le entiendo a álgebra...
 											</div>
 										</li>
 
@@ -2563,11 +2578,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Jeremy Victorino</a>
+													<a href="#">Jesus Rafael</a>
 													<span class="font-size-sm text-muted">09:48</span>
 												</div>
 
-												Pert thickly mischievous clung frowned well...
+												Mañana tengo exámen...
 											</div>
 										</li>
 
@@ -2578,28 +2593,14 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Beatrix Diaz</a>
+													<a href="#">Belem Charles</a>
 													<span class="font-size-sm text-muted">05:54</span>
 												</div>
 
-												Nightingale taped hello bucolic fussily cardinal...
+												¡Pasé todas las materias!
 											</div>
 										</li>
 
-										<li class="media">
-											<div class="mr-3">
-												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">												
-												<div class="d-flex justify-content-between">
-													<a href="#">Richard Vango</a>
-													<span class="font-size-sm text-muted">01:43</span>
-												</div>
-
-												Amidst roadrunner distantly pompously where...
-											</div>
-										</li>
 									</ul>
 								</div>
 
@@ -2608,15 +2609,16 @@
 										<li class="media">
 											<div class="mr-3">
 												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+
 											</div>
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Isak Temes</a>
-													<span class="font-size-sm text-muted">Tue, 19:58</span>
+													<a href="#">Isaac Becerra</a>
+													<span class="font-size-sm text-muted">Ayer, 19:58</span>
 												</div>
 
-												Reasonable palpably rankly expressly grimy...
+												Ya valí
 											</div>
 										</li>
 
@@ -2627,11 +2629,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Vittorio Cosgrove</a>
-													<span class="font-size-sm text-muted">Tue, 16:35</span>
+													<a href="#">Victoria Ruffo</a>
+													<span class="font-size-sm text-muted">Ayer, 16:35</span>
 												</div>
 
-												Arguably therefore more unexplainable fumed...
+												Exámen hoy...
 											</div>
 										</li>
 
@@ -2642,11 +2644,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Hilary Talaugon</a>
-													<span class="font-size-sm text-muted">Tue, 12:16</span>
+													<a href="#">Omar Rodríguez</a>
+													<span class="font-size-sm text-muted">Ayer, 12:16</span>
 												</div>
 
-												Nicely unlike porpoise a kookaburra past more...
+												Necesito tutorías para entender las matrices
 											</div>
 										</li>
 
@@ -2657,26 +2659,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Bobbie Seber</a>
-													<span class="font-size-sm text-muted">Tue, 09:20</span>
+													<a href="#">Bartolomé Jr</a>
+													<span class="font-size-sm text-muted">Ayer, 09:20</span>
 												</div>
 
-												Before visual vigilantly fortuitous tortoise...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Walther Laws</a>
-													<span class="font-size-sm text-muted">Tue, 03:29</span>
-												</div>
-
-												Far affecting more leered unerringly dishonest...
+												No voy a poder ir a la feria
 											</div>
 										</li>
 									</ul>
@@ -2691,11 +2678,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Owen Stretch</a>
-													<span class="font-size-sm text-muted">Mon, 18:12</span>
+													<a href="#">Oswaldo Porras</a>
+													<span class="font-size-sm text-muted">Antier, 18:12</span>
 												</div>
 
-												Tardy rattlesnake seal raptly earthworm...
+												Ya casi es viernes :D
 											</div>
 										</li>
 
@@ -2706,11 +2693,11 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Jenilee Mcnair</a>
-													<span class="font-size-sm text-muted">Mon, 14:03</span>
+													<a href="#">Janeth Quintana</a>
+													<span class="font-size-sm text-muted">Antier, 14:03</span>
 												</div>
 
-												Since hello dear pushed amid darn trite...
+												Necesito tutorías sobre BD
 											</div>
 										</li>
 
@@ -2722,10 +2709,10 @@
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
 													<a href="#">Alaster Jain</a>
-													<span class="font-size-sm text-muted">Mon, 13:59</span>
+													<span class="font-size-sm text-muted">Antier, 13:59</span>
 												</div>
 
-												Dachshund cardinal dear next jeepers well...
+												¿Está libre el CAI?
 											</div>
 										</li>
 
@@ -2736,31 +2723,16 @@
 
 											<div class="media-body">
 												<div class="d-flex justify-content-between">
-													<a href="#">Sigfrid Thisted</a>
-													<span class="font-size-sm text-muted">Mon, 09:26</span>
+													<a href="#">Sandra Tristán</a>
+													<span class="font-size-sm text-muted">Antier, 09:26</span>
 												</div>
 
-												Lighted wolf yikes less lemur crud grunted...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Sherilyn Mckee</a>
-													<span class="font-size-sm text-muted">Mon, 06:38</span>
-												</div>
-
-												Less unicorn a however careless husky...
+												¿Alguien ha visto un cargador HP?
 											</div>
 										</li>
 									</ul>
 								</div>
-							</div>-->
+							</div>
 							<!-- /tabs content -->
 
 						<!-- ESTE DIV SE ME HABÍA PASADO, EL INICIO ESTA CON <> ESO </div>-->
@@ -2884,7 +2856,7 @@
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+						&copy; 2019. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Marlly Cantú</a>
 					</span>
 
 					<ul class="navbar-nav ml-lg-auto">
